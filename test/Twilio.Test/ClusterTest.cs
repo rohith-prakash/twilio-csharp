@@ -21,11 +21,11 @@ namespace Twilio.Tests
         [Category("ClusterTest")]
         public void SetUp()
         {
-            accountSid = Environment.GetEnvironmentVariable("TWILIO_ACCOUNT_SID",EnvironmentVariableTarget.Process);
-            secret = Environment.GetEnvironmentVariable("TWILIO_API_SECRET",EnvironmentVariableTarget.Process);
-            apiKey = Environment.GetEnvironmentVariable("TWILIO_API_KEY",EnvironmentVariableTarget.Process);
-            toNumber = Environment.GetEnvironmentVariable("TWILIO_TO_NUMBER",EnvironmentVariableTarget.Process);
-            fromNumber = Environment.GetEnvironmentVariable("TWILIO_FROM_NUMBER",EnvironmentVariableTarget.Process);
+            accountSid = Environment.GetEnvironmentVariable("TWILIO_ACCOUNT_SID");
+            secret = Environment.GetEnvironmentVariable("TWILIO_API_SECRET");
+            apiKey = Environment.GetEnvironmentVariable("TWILIO_API_KEY");
+            toNumber = Environment.GetEnvironmentVariable("TWILIO_TO_NUMBER");
+            fromNumber = Environment.GetEnvironmentVariable("TWILIO_FROM_NUMBER");
             TwilioClient.Init(username:apiKey,password:secret,accountSid:accountSid);
         }
         
